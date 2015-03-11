@@ -1,0 +1,20 @@
+nav {
+  position:fixed;
+  top:0px;
+  height: 5em;
+  display:block;
+  width: 100%;
+  background: none;
+  margin-top: em(10);
+  z-index:9;
+  #logo {
+    float: left;
+  }
+  #links {
+    float: right;
+  }
+  a {
+    display: inline-block;
+    margin: 0 .5em;
+  }
+}
