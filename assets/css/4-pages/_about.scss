@@ -1,0 +1,26 @@
+#about {
+  @include outer-container();
+  background: #EED9D0;
+  h2 {
+    @include row();
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: em(30px);
+    text-align: center;
+  }
+  span {
+    @include row();
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .05em;
+    font-size: em(20px);
+    img {
+      margin-top: em(-50px);
+      margin-bottom: em(-50px);
+    } 
+  }
+  p {
+      @include span-columns(11);
+      @include shift(.3);
+  }
+}
