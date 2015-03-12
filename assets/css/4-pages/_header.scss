@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+  background: url(/assets/img/21.jpg) center center;
+  background-size: cover;
+  color: #865853;
+  hgroup {
+    display: inline-block;
+    margin: 5em auto;
+    border: em(7px) solid #865853;
+    background: rgba(236, 240, 241, 0.5);
+  }
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: em(50px);
+    margin: 0 .05em;
+  }
+}
+
