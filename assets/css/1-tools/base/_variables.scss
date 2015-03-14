@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400);
+$main-font: 'Raleway', 'sans-serif';
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: $main-font;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -23,7 +25,7 @@ $light-gray: #ddd;
 
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
+$base-font-color: black;
 $action-color: $blue;
 
 // Border
