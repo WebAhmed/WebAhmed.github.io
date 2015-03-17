@@ -5,15 +5,18 @@
   height: 3em;;
   display:block;
   width: 100%;
-  margin-bottom: 2em;
+  z-index: 999;
+  #nav-links{
+    float: right;
     a {
     display: inline-block;
     text-transform: uppercase;
     margin: .3em;
-    float: right;
+    float: left;
     color:#fff;
-    span {
-      display: block;
+      span {
+        display: block;
+      }
     }
   }
 }

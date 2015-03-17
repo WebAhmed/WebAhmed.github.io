@@ -6,14 +6,14 @@ $(document).ready(function() {
     keyboardScrolling: true,
     animateAnchor: true,
     recordHistory: true,
+    css3: true,
     // menu: '#menu',
     anchors: ['homePage', 'aboutPage', 'skillsPage', 'contactPage'],
-    sectionsColor: ['', '#27ae60', '#3498db', '#9b59b6', '#8e44ad'],
     verticalCentered: true, /* center the screen*/
     navigation: true,
     navigationPosition: 'right',
     easing: 'easeInOutCubic',
+    scrollOverflow: true,
     scrollingSpeed: 700
   });
-
 });

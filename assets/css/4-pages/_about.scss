@@ -1,27 +1,34 @@
 #about {
   @include outer-container();
-  // background: #16a085;
-  h2 {
-    margin: 0;
-    padding: 2em 0 .5em 0;
-  }
+  background: #16a085;
   span {
     @include row();
+    background-color: red;
+    padding: 3em 0 .5em 0;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .05em;
     font-size: em(20px);
     p {
-    @include fill-parent;
+      @include fill_parent;
+      margin: 0;
+      background-color: yellow;
     }
   }
   img {
-    @include span-columns(3);
-    margin-top: em(-50px);
-    // margin-bottom: em(-50px);
+    @include span-columns(4);
+    @include shift(4);
+    // @include media($medium-screen-up) {
+    //   @include span-columns(2);
+    //   @include shift(1.5);
+    // }
   }
-  p {
-    @include span-columns(9);
-    @include omega;
+  #about-paragraphs {
+    @include row();
+    p {
+      @include span-columns(10);
+      @include shift(1);
+      background: white;
+    }
   }
 }
