@@ -2,6 +2,8 @@
 #site-nav {
   position:fixed;
   top:0px;
+  left:0;
+  right:0;
   height: 3em;;
   display:block;
   width: 100%;
@@ -9,11 +11,12 @@
   #nav-links{
     float: right;
     a {
-    display: inline-block;
-    text-transform: uppercase;
-    margin: .3em;
-    float: left;
-    color:#fff;
+      font-size: em(18px);
+      text-transform: uppercase;
+      text-align: center;
+      padding: .5em .7em;
+      float: left;
+      color:#C4BAB9;
       span {
         display: block;
       }

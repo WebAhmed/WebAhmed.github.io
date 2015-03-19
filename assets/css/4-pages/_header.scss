@@ -1,19 +1,27 @@
-header {
-  text-align: center;
+#section0 {
   background: url(/assets/img/2.jpg) center center;
   background-size: cover;
-  color: #E0D839;
-  hgroup {
-    display: inline-block;
-    margin: 5em auto;
-    border: em(7px) solid #E0D839;
-    background: rgba(50, 53, 53, 0.7);
-  }
-  h1 {
+  position: relative;
+  header {
+    position: absolute;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .05em;
-    font-size: em(50px);
-    margin: 0 .05em;
+    color: #C4BAB9;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%,-50%));
+    hgroup {
+      border: em(5px) solid #C4BAB9;
+      padding: 0 1em;
+      background: rgba(50, 53, 53, 0.4);
+      h1 {
+        font-size: em(70px);
+        margin:0;
+      }
+      p {
+        font-size: em(25px);
+      }
+    }
   }
 }
-
