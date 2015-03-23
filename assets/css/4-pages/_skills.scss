@@ -1,0 +1,25 @@
+#skills-page {
+  min-height: 100vh;
+  background-color: #95a5a6;
+  text-align: center;
+  color: #FFF;
+  @include span-columns(12);
+  span {
+    position: relative;
+    @include size(em(150px));
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 1em 2em;
+    &:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+    img {
+      @include size(em(100px));
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%,-50%));
+    }
+  }
+}
