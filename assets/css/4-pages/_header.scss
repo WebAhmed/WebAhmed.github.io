@@ -1,0 +1,30 @@
+#home-page {
+  @include span-columns(12);
+  background: url(../img/2.jpg) center center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #FFF;
+  hgroup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%,-80%));
+    border: em(2px) solid #FFF;
+    background: rgba(50, 53, 53, 0.4);
+    padding: .5em 1em;
+    h1 {
+      font-size: em(30px);
+      font-family: 'Syncopate', sans-serif;      
+      margin-bottom: 0;
+    }
+    p {
+      font-family: 'Orbitron', sans-serif;
+      margin:0;
+      font-size: em(20px);
+    }
+  }
+}
