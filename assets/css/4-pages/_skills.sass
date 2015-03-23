@@ -1,19 +1,23 @@
-#skills
-  +outer-container
-  text-align: center
-  h2
-    +row
-    text-transform: uppercase
-    letter-spacing: .05em
-    font-size: em(30px)
-    margin: 0
-    padding: 2em 0 .5em 0
-  h3
-    +row
-    font-size: em(15px)
-    margin: 0
-    padding: 2em 0 .5em 0
-  img 
-    +size(em(100px))
-    display: inline-block
-    margin: 0 .5em
+#skills {
+  @include outer-container;
+  text-align: center;
+  h2 {
+    @include row;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: em(30px);
+    margin: 0;
+    padding: 2em 0 .5em 0;
+  }
+  h3 {
+    @include row;
+    font-size: em(15px);
+    margin: 0;
+    padding: 2em 0 .5em 0;
+  }
+  img {
+    @include size(em(100px));
+    display: inline-block;
+    margin: 0 .5em;
+  }
+}

@@ -4,17 +4,18 @@
   top:0px;
   left:0;
   right:0;
-  height: 3em;;
+  min-height: 3em;
   display:block;
   width: 100%;
   z-index: 999;
   #nav-links{
     float: right;
+    padding: .5em;
     a {
       font-size: em(18px);
       text-transform: uppercase;
       text-align: center;
-      padding: .5em .7em;
+      padding: .5em;
       float: left;
       color:#C4BAB9;
       span {
