@@ -4,14 +4,23 @@
   position: relative;
   min-height: 100vh;
   background: url(../img/parallaxbg.jpg) center center;
-  #front-end {
-    position: static;
-    z-index: 5;
+  #scene {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+  }
+  #frontend {
+    margin-top: 10%;
+    @include media($mobile) {
+      margin-top: 50%;
+    }
   }
   #backend {
-    z-index: 4;
-    position: static;
-    margin-top: 10%;
-    margin-left: 50%;
+    margin-left: 20%;
+    @include media($mobile) {
+      margin: auto;
+    }
   }
 }
