@@ -1,20 +1,14 @@
 $(document).ready(function() {
 
-  // /* Full-page initialization */
-  // $('#fullpage').fullpage({
-  //   //Accessibility
-  //   keyboardScrolling: true,
-  //   animateAnchor: true,
-  //   recordHistory: true,
-  //   css3: true,
-  //   // menu: '#menu',
-  //   anchors: ['homePage', 'aboutPage', 'skillsPage', 'contactPage'],
-  //   verticalCentered: true, /* center the screen*/
-  //   navigation: true,
-  //   navigationPosition: 'right',
-  //   easing: 'easeInOutCubic',
-  //   scrollOverflow: true,
-  //   scrollingSpeed: 700
-  // });
-    $('#skills-page').parallax();
+  /* Full-page initialization */
+  $('#main-container').fullContent({ 
+    stages: 'div', 
+    mapPosition: [{v: 1, h: 1}, {v: 1, h: 2}, {v: 2, h: 1}, {v: 2, h: 2}], 
+    stageStart: 1, 
+    speedTransition: 800, 
+    idComplement: 'page_', 
+    ease: 'easeOutQuad' 
+  });
+
+  $('#skills-page').parallax();
 });
