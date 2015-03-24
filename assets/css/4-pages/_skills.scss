@@ -6,10 +6,10 @@
   background: url(../img/parallaxbg.jpg) center center;
   #scene {
     position: absolute;
-    top:0;
-    bottom:0;
-    right: 0;
-    left: 0;
+    top:10%;
+    bottom:10%;
+    right: 10%;
+    left: 10%;
   }
   #frontend {
     margin-top: 10%;
@@ -18,7 +18,7 @@
     }
   }
   #backend {
-    margin-left: 20%;
+    margin-left: 10%;
     @include media($mobile) {
       margin: auto;
     }
