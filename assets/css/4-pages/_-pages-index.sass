@@ -7,8 +7,6 @@ body
   overflow-y: auto
 
 
-
-
 #main-containter
   +outer-container
   position: relative
@@ -28,6 +26,15 @@ h2
 hr
   margin: .5em auto
   width: 15%
+
+.download-resume
+  position: absolute
+  top: 70%
+  left: 50%
+  +button(pill, #32AB2A)
+  +transform(translate(-50%,-50%))
+  &:hover
+    color: #fff;
 
 @import 'header'
 @import 'about'

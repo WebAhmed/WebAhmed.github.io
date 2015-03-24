@@ -4,6 +4,7 @@
   min-height: 100vh;
   background-color: #AB4B2A;
   color: #FFF;
+  position: relative;
   #contact-links {
     @include span-columns(8);
     @include shift(2);
