@@ -1,8 +1,12 @@
+var homeParallaxInfo , aboutMe, figure, intro;
+
 $(document).ready(function() {
-  var homeParallaxInfo = $('#homeParallaxInfo')
-  var aboutMe = $('#about-me')
-  var figure = $('.figure')
-  var intro = $('.intro')
+  $('#skills-parallax').parallax();
+  
+  homeParallaxInfo = $('#homeParallaxInfo')
+  aboutMe = $('#about-me')
+  figure = $('.figure')
+  intro = $('.intro')
   
 
 //parallax
@@ -10,20 +14,23 @@ $(document).ready(function() {
   intro.addClass('animated fadeInUp')
 
   $(window).scroll(function(){
+    // the distance between the top of the window and current point
     var wScroll = $(this).scrollTop()
-    var aboutMeOffset = aboutMe.offset().top
 
 
     homeParallaxInfo.css({
       'transform' : 'translate(0px,'+ wScroll /2 +'%)'
     })
 
-    if (aboutMeOffset > wScroll ) {
-      figure.addClass('animated fadeInUp')
-    } 
+    // this avoids element not existing on other pages error
+    if (aboutMe.length) {
+      if ( aboutMe.offset().top > wScroll ) {
+        figure.addClass('animated fadeInUp')
+      }
+    }
 
   })
 
-  $('#skills-page').parallax();
+  
 
 });
