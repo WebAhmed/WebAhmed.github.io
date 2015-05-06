@@ -1,8 +1,8 @@
 # Site settings
 title: Ahmed Abdelaal
 email: ahmed@fitucated.com
-name: ""
-description: ""
+name: "Ahmed Abdelaal"
+description: "Full Stack Ruby on Rails Developer"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://WebAhmed.github.io" # the base hostname & protocol for your site
 sass:
