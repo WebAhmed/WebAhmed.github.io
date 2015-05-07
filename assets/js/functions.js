@@ -1,4 +1,4 @@
-var homeParallaxInfo , aboutMe, figure, intro;
+var homeParallaxInfo , aboutMe, figure, intro, skill;
 
 $(document).ready(function() {
   $('#skills-parallax').parallax();
@@ -7,6 +7,7 @@ $(document).ready(function() {
   aboutMe = $('#about-me')
   figure = $('.figure')
   intro = $('.intro')
+  skills = $('#skills')
   
 
 //parallax
@@ -16,7 +17,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     // the distance between the top of the window and current point
     var wScroll = $(this).scrollTop()
-
+    var triggerPoint = $('window').height() / 1.2
 
     homeParallaxInfo.css({
       'transform' : 'translate(0px,'+ wScroll /2 +'%)'
@@ -24,11 +25,12 @@ $(document).ready(function() {
 
     // this avoids element not existing on other pages error
     if (aboutMe.length) {
-      if ( aboutMe.offset().top > wScroll ) {
+      var aboutMeOffset = aboutMe.offset().top - triggerPoint
+
+      if ( aboutMeOffset > wScroll ) {
         figure.addClass('animated fadeInUp')
       }
     }
-
   })
 
   
