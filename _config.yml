@@ -9,6 +9,11 @@ sass:
   sass_dir: assets/css
   style: :nested
 
+# Tags (tag cloud)
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
 # Social Media
 twitter_username: Z1ahmed
 github_username:  WebAhmed
