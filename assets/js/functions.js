@@ -1,8 +1,6 @@
 var homeParallaxInfo , aboutMe, figure, intro, skill;
 
 $(document).ready(function() {
-  $('#skills-parallax').parallax();
-  
   homeParallaxInfo = $('#homeParallaxInfo')
   aboutMe = $('#about-me')
   figure = $('.figure')
