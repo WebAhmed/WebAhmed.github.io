@@ -1,13 +1,18 @@
 ---
 layout: default
-title: {{site.title}}
+title: Tech Blogs
 ---
 <div class="container">
   <div class="col-sm-12">
-    <div class="row">
-      {% for post in site.categories.tech %}
-        {% include summary.html %}
-      {% endfor %}
+    <div id="tech-index">
+      <div class="row">
+        <h2>Technology Blogs</h2>
+      </div>
+      <div class="row">
+        {% for post in site.categories.tech %}
+          {% include summary.html %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
