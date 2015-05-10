@@ -1,0 +1,48 @@
+---
+layout: default
+title: Categories
+---
+<div class="container">
+  <div class="col-md-12">
+    <div id="general-index">
+      <div class="row">
+        <h2 class="header">General Blogs</h2>
+      </div>
+      <div class="row">
+        {% for post in site.categories.general limit:5 %}
+          {% include summary.html %}
+        {% endfor %}
+      </div>
+    </div>
+    <div id="tech-index">
+      <div class="row">
+        <h2 class="header">Technology Blogs</h2>
+      </div>
+      <div class="row">
+        {% for post in site.categories.tech limit:5 %}
+          {% include summary.html %}
+        {% endfor %}
+      </div>
+    </div>
+    <div id="fitness-index">
+      <div class="row">
+        <h2 class="header">Fitness Blogs</h2>
+      </div>
+      <div class="row">
+        {% for post in site.categories.fitness limit:5 %}
+          {% include summary.html %}
+        {% endfor %}
+      </div>
+    </div>
+    <div id="nutrition-index">
+      <div class="row">
+        <h2 class="header">Nutrition Blogs</h2>
+      </div>
+      <div class="row">
+        {% for post in site.categories.nutrition limit:5 %}
+          {% include summary.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
