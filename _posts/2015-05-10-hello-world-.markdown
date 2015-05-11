@@ -2,6 +2,7 @@
 layout: post
 title: Hello World!
 categories: [general]
+
 tags: [general]
 ---
 
@@ -13,8 +14,8 @@ Unfortunately as soon as I started the in house part of DBC, I stopped writing a
 
 After a lot of learning and not a lot of writing, I’ve decided to discard my old posts (sort of... They’re archived on Github) and start some fresh ones.
 
-I will be writing mostly about programming topics surrounding Web Development and Linux, along with fitness and healthy nutrition information that I’ve personally learned accumulated over time.
+I will be writing mostly about programming topics surrounding Web Development and Linux, along with fitness and healthy nutrition information that I’ve personally learned and accumulated over time.
 
-If you're starting programming or web wevelpment, searching for general fitness or nutrition tips, or if any of that sounds interesting to you, you're in the right place.
+If you're starting programming or web development, or if you're looking for fitness and nutrition tips, stick around you're in the right place.
 
 Stay tuned for future posts!
