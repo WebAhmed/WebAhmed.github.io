@@ -5,6 +5,7 @@ name: "Ahmed Abdelaal"
 description: "Full Stack Ruby on Rails Developer"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://WebAhmed.github.io" # the base hostname & protocol for your site
+
 sass:
   sass_dir: assets/css
   style: :nested
@@ -22,5 +23,5 @@ github_username:  WebAhmed
 markdown: kramdown
 permalink: pretty
 paginate: 10
-
+plugins: [jekyll-paginate]
 port: 3000
